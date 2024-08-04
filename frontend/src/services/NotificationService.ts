@@ -7,7 +7,7 @@ export const getNotifications = (deviceType: string) => {
     customAxios
       .get(`${url}/${deviceType}/notification-dummy-values`)
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      .then((response) => response.data)
+      .then((response: { data: any; }) => response.data)
       .catch()
   );
 };

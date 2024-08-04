@@ -6,7 +6,6 @@ import DeviceCard from './DeviceCard';
 const ProjectBox = () => {
   const currentDate = new Date();
 
-  // Format the date as 'Month Day, Year' (e.g., 'October 3, 2023')
   const formattedDateNow = new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
@@ -14,9 +13,8 @@ const ProjectBox = () => {
   }).format(currentDate);
 
   const devicesData = [
-    { name: "Door 1", description: "an door in the office", formattedDate: formattedDateNow, statusPercentage: 80 },
+    { name: "Door 1", description: "a door in the office", formattedDate: formattedDateNow, statusPercentage: 80 },
     { name: "Thermometer", description: "a thermometer", formattedDate: formattedDateNow, statusPercentage: 95 },
-    // Add more devices as needed
   ];
     
   return (
@@ -28,7 +26,7 @@ const ProjectBox = () => {
       <div className="projects-section-line">
         <div className="projects-status">
           <div className="item-status">
-            <span className="status-number">3</span>
+            <span className="status-number">2</span>
             <span className="status-type">Active Devices</span>
           </div>
         </div>
@@ -40,7 +38,7 @@ const ProjectBox = () => {
       </div>
       <div className="project-boxes jsGridView">
         {devicesData.map((device, index) => (
-          <DeviceCard key={index} name={device.name} description={device.description} deformattedDate={device.formattedDate} statusPercentage={device.statusPercentage} />
+          <DeviceCard key={index} name={device.name} description={device.description} formattedDate={device.formattedDate} statusPercentage={device.statusPercentage} />
         ))}
       </div>
     </div>

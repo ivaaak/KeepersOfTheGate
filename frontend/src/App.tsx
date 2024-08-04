@@ -1,8 +1,8 @@
 import React from 'react';
-import AppHeader from './components/AppHeader'; // Import your AppHeader component here
-import AppSidebar from './components/AppSidebar'; // Import your AppSidebar component here
-import ProjectBox from './components/ProjectBox'; // Import your ProjectsSection component here
-import MessagesSection from './components/MessagesSection'; // Import your MessagesSection component here
+import AppHeader from './components/AppHeader';
+import AppSidebar from './components/AppSidebar';
+import ProjectBox from './components/ProjectBox';
+import MessagesSection from './components/MessagesSection';
 MessagesSection
 const App: React.FC = () => {
   return (

@@ -3,11 +3,10 @@ import React from 'react';
 const messagesData = [
   {
     name: 'Office Door 1',
-    message: 'I got your first assignment. It was quite good. 🥳 We can continue with the next assignment.',
+    message: 'Placeholder for a message about the doors state.',
     date: 'September, 12',
     imageUrl: 'https://prod-trudoor-media.s3.us-west-2.amazonaws.com/wp-content/uploads/2019/04/21112241/commercial-office-wood-door-wth-glass-e1593365212506.jpg'
   },
-  // Add more message objects here if needed
 ];
 
 const Messages = () => {
